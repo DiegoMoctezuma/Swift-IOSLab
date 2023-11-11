@@ -16,6 +16,8 @@
 		3F472F732AFC1D260019098E /* ProyectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F472F722AFC1D260019098E /* ProyectUITestsLaunchTests.swift */; };
 		3F472F832AFC1F4D0019098E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F472F822AFC1F4D0019098E /* Card.swift */; };
 		3F472F862AFC24FE0019098E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F472F852AFC24FE0019098E /* InfoView.swift */; };
+		FF1B59B92AFECCC40054E7B7 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1B59B82AFECCC40054E7B7 /* UserView.swift */; };
+		FF1B59BB2AFECCD70054E7B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1B59BA2AFECCD70054E7B7 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		3F472F722AFC1D260019098E /* ProyectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3F472F822AFC1F4D0019098E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3F472F852AFC24FE0019098E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		FF1B59B82AFECCC40054E7B7 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		FF1B59BA2AFECCD70054E7B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				3F472F852AFC24FE0019098E /* InfoView.swift */,
+				FF1B59B82AFECCC40054E7B7 /* UserView.swift */,
+				FF1B59BA2AFECCD70054E7B7 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 			files = (
 				3F472F862AFC24FE0019098E /* InfoView.swift in Sources */,
 				3F472F582AFC1D240019098E /* ContentView.swift in Sources */,
+				FF1B59B92AFECCC40054E7B7 /* UserView.swift in Sources */,
+				FF1B59BB2AFECCD70054E7B7 /* HomeView.swift in Sources */,
 				3F472F832AFC1F4D0019098E /* Card.swift in Sources */,
 				3F472F562AFC1D240019098E /* ProyectApp.swift in Sources */,
 			);
