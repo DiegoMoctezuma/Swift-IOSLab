@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct Card: View {
+    
+    var idimage: Int = 50
+    var nombreProducto: String
+    var precioProducto: String
+    
     var body: some View {
         VStack(alignment: .leading) {
-            AsyncImage(url: URL(string: "https://picsum.photos/id/59/200/150"))
+            AsyncImage(url: URL(string: "https://picsum.photos/id/\(idimage)/200/150"))
                 .padding(.bottom,20)
-            Text("Terreno")
+            Text("\(nombreProducto)")
                 .bold()
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .padding(.leading,10)
                 .foregroundColor(.black)
-            Text("$20")
+            Text("$\(precioProducto)")
                 .padding(.leading,10)
                 .foregroundColor(.black)
             Spacer()
@@ -26,8 +31,4 @@ struct Card: View {
         .background(.ultraThickMaterial)
         .clipShape(.rect(cornerRadius: 20))
     }
-}
-
-#Preview {
-    Card()
 }
