@@ -12,19 +12,24 @@ struct InfoView: View {
     @State private var cantidad = 1
     @State private var total = 0
     
+    var idimage: Int = 50
+    var precio: Int = 62
+    var nombreProducto: String
+    var precioProducto: String
+    
     var body: some View {
         ScrollView{
             VStack(alignment: .leading) {
-                AsyncImage(url: URL(string: "https://picsum.photos/id/59/400/350"))
+                AsyncImage(url: URL(string: "https://picsum.photos/id/\(idimage)/400/350"))
                     .padding(.bottom,5)
                     .ignoresSafeArea()
                 
-                Text("Terreno en Tlaxcala")
+                Text("\(nombreProducto)")
                     .bold()
                     .font(.largeTitle)
                     .padding(.leading,10)
                 
-                Text("$20")
+                Text("$\(precioProducto)")
                     .bold()
                     .font(.largeTitle)
                     .padding(.bottom,20)
@@ -60,6 +65,7 @@ struct InfoView: View {
                 Spacer()
             }
         }.ignoresSafeArea()
+            .onAppear()
     }
     
     func restar(){
@@ -78,10 +84,6 @@ struct InfoView: View {
     }
     
     func totalPrecio(){
-        total = cantidad * 20
+        total = cantidad * precio
     }
-}
-
-#Preview {
-    InfoView()
 }
